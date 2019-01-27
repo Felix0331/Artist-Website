@@ -1,0 +1,118 @@
+*{
+    padding:0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+   background-image: url('../Belen_Project/Images/background.jpg');
+   background-color: black; 
+   background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#grid_content{
+    display: grid; 
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    margin:0 auto;
+}
+header{
+    grid-column: 4/10;
+    grid-row: 2/4;  
+    padding: 10px;
+    border-radius: 10px;
+}
+main{
+    grid-column: 4/10;
+    grid-row: 4/5; 
+    background:lightgrey;  
+    border-radius: 10px;
+    opacity: .8;
+}
+nav{
+    grid-column: 1/2;
+    border-radius: 10px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.nested{
+    display: grid;
+    grid-column: 4/10;
+    grid-row: 6/8;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px, auto);
+    background:lightgrey;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: center
+}
+
+.nested img{
+    border: 1px dashed black;
+    padding: 10px;
+    margin: 0;
+    gap: 10px;
+    transform: rotate(90deg);
+    align-self: center;
+    justify-self: center;
+    opacity: 1;
+}
+
+footer{
+grid-column: 6/8;
+grid-row: auto;
+background:lightgrey;
+border-radius: 10px;
+opacity: .3;
+height: 60px;
+align-self: flex-end;
+}
+.Belen{
+    height: 500px;
+    width: 500px;
+    transform: rotate(90deg);
+    Border-radius: 500px;
+    align-content: center;
+    border: 10px solid white;
+}
+.BDLC{
+    color: gray;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 300%;
+    grid-column: 2/12;
+    grid-row: 1/1;
+    margin: 0;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+
+.sm-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+h4{
+    padding: 5px;
+    margin: 0;
+}
+
+#read-more:hover, #read-more:active{
+    cursor: pointer;
+    font-size: 105%;
+}
+
+
+
+
